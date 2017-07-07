@@ -41,6 +41,16 @@ twitter_username: gsvoss
 github_username:
 markdown: kramdown
 theme: minima
-gems:
+plugins:
 - jekyll-feed
+- jekyll-assets
 permalink: pretty
+
+assets:
+  prefix: "/assets"
+  digest: true
+  assets:
+    - "*.png"
+    - "*.jpg"
+  sources:
+    - _uploads
