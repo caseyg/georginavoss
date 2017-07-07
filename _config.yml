@@ -35,10 +35,10 @@ description: 'I''m a technology anthropologist, artist, and writer. I''m based i
   systems.
 
 '
-baseurl:
+baseurl: 
 url: https://georginavoss.netlify.com
 twitter_username: gsvoss
-github_username:
+github_username: 
 markdown: kramdown
 theme: minima
 plugins:
