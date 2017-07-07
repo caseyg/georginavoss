@@ -45,12 +45,11 @@ plugins:
 - jekyll-feed
 - jekyll-assets
 permalink: pretty
-
 assets:
   prefix: "/assets"
   digest: true
   assets:
-    - "*.png"
-    - "*.jpg"
+  - "*.png"
+  - "*.jpg"
   sources:
-    - _uploads
+  - _uploads
