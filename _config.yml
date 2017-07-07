@@ -23,6 +23,11 @@ defaults:
     type: pages
   values:
     layout: page
+- scope:
+    path: ''
+    type: projects
+  values:
+    layout: page
 email: georgina@strangetelemetry.com
 description: 'I''m a technology anthropologist, artist, and writer. I''m based in
   London. My work focuses on the politics and culture surrounding the development
@@ -30,10 +35,10 @@ description: 'I''m a technology anthropologist, artist, and writer. I''m based i
   systems.
 
 '
-baseurl: 
+baseurl:
 url: https://georginavoss.netlify.com
 twitter_username: gsvoss
-github_username: 
+github_username:
 markdown: kramdown
 theme: minima
 gems:
