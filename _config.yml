@@ -1,0 +1,55 @@
+---
+title: Georgina Voss
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  projects:
+    title: Projects
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: projects
+  values:
+    layout: page
+email: georgina@strangetelemetry.com
+description: 'I''m a technology anthropologist, artist, and writer. I''m based in
+  London. My work focuses on the politics and culture surrounding the development
+  and use of hardware, electronics, and large or complex technological artefacts and
+  systems.
+
+'
+baseurl: 
+url: https://georginavoss.netlify.com
+twitter_username: gsvoss
+github_username: 
+markdown: kramdown
+theme: minima
+plugins:
+- jekyll-feed
+- jekyll-assets
+permalink: pretty
+assets:
+  prefix: "/assets"
+  digest: true
+  assets:
+  - "*.png"
+  - "*.jpg"
+  sources:
+  - _uploads
