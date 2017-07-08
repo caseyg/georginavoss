@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      $( document ).tooltip({
+    		track: true,
+    		effect: "none",
+    		show: false,
+    		hide: false,
+    		duration: 0,
+    		delay: 0,
+    		items: "[title]",
+    		content: function() {
+    		var element = $( this );
+    		if ( element.is( "[title]" ) ) {
+    			return "<img src='/uploads/" + element.attr( "title" ) + "'>";
+    		}
+          }
+        });
+    </script>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  </head>
+<body>
+
+  <header class="container py-4">
+    <div class="row">
+      <div class="col">
+        {% assign pages = site.pages | sort:"position" %}
+        <ul class="d-inline list-inline">
+          {% for my_page in pages %}
+            {% if my_page.title %}
+              <li class="list-inline-item{% if my_page.url == page.url %} active{% endif %}"><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="row">
+      <div class="col">
+        {{ content }}
+      </div>
+    </div>
+  </main>
+
+  <div class="container-fluid py-4 mt-4" style="background:gray;">
+    <footer class="container">
+      <div class="row">
+        <div class="col">
+            {{ site.title | escape }} &bull; {% if site.email %}<a href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %} &bull; {% if site.twitter_username %} <a href="http://twitter.com/{{site.twitter_username}}">@{{site.twitter_username}}</a>{% endif %}
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

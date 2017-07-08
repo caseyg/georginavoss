@@ -1,0 +1,21 @@
+---
+layout: default
+---
+  <div class="content">
+    {{ content }}
+  </div>
+
+<ul class="list-unstyled">
+  {% for writing in page.writings %}
+    <li class="list-unstyled-item py-2" {% if writing.image != null %}title="{{ writing.image }}"{% endif %}>
+      <span>
+        <a href="{{ writing.link }}">{{ writing.title | escape }}</a>
+      </span>
+      <br>
+      <span class="ml-3" style="color: gray;">
+        {% if writing.publisher != null %}<em>{{ writing.publisher }}</em>, {% endif %}
+        {{ writing.date-display }}
+      </span>
+    </li>
+  {% endfor %}
+</ul>
