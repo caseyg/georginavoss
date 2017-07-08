@@ -6,5 +6,6 @@ writings:
   date: 2017-05-03 00:00:00 Z
   publisher: The Atlantic
   image: "/uploads/lead_960.png"
+  tags: Infrastructure and Logistics
 ---
 
