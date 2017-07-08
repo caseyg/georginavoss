@@ -1,12 +1,12 @@
 ---
 title: As Above Not Below
 date: 2017-07-07 15:24:00 Z
-image: "/uploads/image-1.jpg"
+image: image-1.jpg
 ---
 
 {% img "image-1.jpg" "magick:resize:150x150^" "magick:crop:150x150+0+0" %}
 
-As Above Not Below was a commission for Artefact 2016, Up In The Air, at STUK, Leuven. 
+As Above Not Below was a commission for Artefact 2016, Up In The Air, at STUK, Leuven.
 
 As Above Not Below is a data and visualisation installation which exposes the impalpable infrastructure of international airspace, and the limits of our access to the sky above us. A large floor-projected map of Belgium displays the visual boundaries and structures of alternating international air regulations (civil, military, prohibited etc) to expose how the form of Belgium is radically re-shaped through this regulatory infrastructure.
 
