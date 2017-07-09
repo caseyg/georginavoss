@@ -4,3 +4,38 @@
 	box-shadow: none;
   opacity: 1;
 }
+
+#instantclick-bar {
+  background: gray;
+}
+
+a:link, a:visited {
+  color: gray;
+}
+
+footer a:link, footer a:visited {
+  color: lightgray;
+}
+
+body {
+  font-family: Inconsolata;
+  text-align: center;
+}
+
+main {
+  text-align: left;
+}
+
+.active {
+//  font-weight: bold;
+  border-bottom: 3px solid gray;
+}
+
+.list-inline {
+  a:hover {
+    text-decoration: none;
+  }
+  li:hover {
+    border-bottom: 3px solid darkgray;
+  }
+}
