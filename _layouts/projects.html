@@ -12,7 +12,7 @@ layout: default
     <li class="list-inline-item py-2">
         <a href="{{ project.url }}">
           {% img "{{ image }}" "magick:resize:250x250^" "magick:crop:250x250+0+0" %}<br>
-          {{ project.title | escape }}<br>
+          {{ project.title | escape }}
           {{ project.date | date: "%B %Y" }}
         </a>
     </li>

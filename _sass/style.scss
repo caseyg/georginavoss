@@ -6,15 +6,15 @@
 }
 
 #instantclick-bar {
-  background: gray;
+  background: black;
 }
 
 a:link, a:visited {
-  color: gray;
+  color: black;
 }
 
 footer a:link, footer a:visited {
-  color: lightgray;
+  color: black;
 }
 
 body {
@@ -26,7 +26,23 @@ main {
   text-align: left;
 }
 
+.writing {
+	li {
+		display: block;
+		max-width: 200px;
+		padding: 15px;
+		border: 1px solid lightgray;
+		margin: 15px;
+		float: left;
+		line-height: 1.15;
+	}
+}
+
 .list-inline {
+	li {
+		vertical-align: middle;
+	}
+	/*
   a:hover {
     text-decoration: none;
   }
@@ -34,9 +50,10 @@ main {
 		border-bottom: 3px solid transparent;
 	}
 	li.active {
-	  border-bottom: 3px solid gray;
+	  border-bottom: 3px solid black;
 	}
   li:hover {
     border-bottom: 3px solid darkgray;
   }
+	*/
 }

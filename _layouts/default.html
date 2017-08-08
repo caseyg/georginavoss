@@ -41,7 +41,12 @@
         <ul class="d-inline list-inline">
           {% for my_page in pages %}
             {% if my_page.title %}
-              <li class="list-inline-item{% if my_page.url == page.url %} active{% endif %}"><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+              <li class="list-inline-item{% if my_page.url == page.url %} active{% endif %}">
+                {% if my_page.url == page.url %} ⃝<br>{% endif %}
+                <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                {% assign slug = my_page.title | slugify %}
+                {% if slug == page.collection %}<br> ⃤{% endif %}
+              </li>
             {% endif %}
           {% endfor %}
         </ul>
@@ -57,7 +62,7 @@
     </div>
   </main>
 
-  <div class="container-fluid py-4 mt-4" style="background:gray;">
+  <div class="container-fluid py-4 mt-4">
     <footer class="container">
       <div class="row">
         <div class="col">
