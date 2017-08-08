@@ -1,6 +1,7 @@
 ---
 title: Mare Island Extension Kit
 date: 2017-08-08 20:59:00 Z
+image: "/uploads/image-3.jpg"
 ---
 
 The Mare Island Extension Kit was created as part of the Situation Systems project in Autodesk’s Experimental Research Lab, Pier 9, San Francisco. It was exhibited at Pier 9 in June 2016; in the Situated Systems speculative exhibition; and as an online distributed work.
