@@ -2,21 +2,36 @@
 layout: default
 ---
 
-  <div class="content">
-    {{ content }}
-  </div>
-
-<ul class="list-unstyled">
-  {% for writing in page.writings %}
-    <li class="list-unstyled-item py-2" {% if writing.image != null %}title="{{ writing.image }}"{% endif %}>
-      <span>
-        <a href="{{ writing.link }}">{{ writing.title | escape }}</a>
-      </span>
-      <br>
-      <span class="ml-3" style="color: gray;">
-        {% if writing.publisher != null %}<em>{{ writing.publisher }}</em>, {% endif %}
+<div class="content">
+  {{ content }}
+</div>
+<!--
+  {% for writing in site.writings %}
+    <li class="list-unstyled-item" {% if writing.image != null %}title="{{ writing.image }}"{% endif %}>
+      <a href="{{ writing.link }}">{{ writing.title | escape }}</a><br>
+      <span style="color: darkgray;">
+        {% if writing.publisher != null %}<em>{{ writing.publisher }}</em><br>{% endif %}
         {{ writing.date-display }}
       </span>
     </li>
   {% endfor %}
+</ul>
+-->
+<ul class="list-unstyled writing">
+
+{% for writing in page.writings %}
+  {% assign currentdate = writing.date | date: "%Y" %}
+  {% if currentdate != date %}
+    <hr style="clear:both;">
+    <h2 id="y{{currentdate}}">{{ currentdate }}</h2>
+    {% assign date = currentdate %}
+  {% endif %}
+    <li class="ml-0">
+      <a href="{{ writing.link }}">{{ writing.title }}</a><br>
+      <span style="color: darkgray" class="d-block pt-2">
+        {% if writing.publisher != null %}<em>{{ writing.publisher }}</em><br>{% endif %}
+        {{ writing.date-display }}
+      </span>
+    </li>
+{% endfor %}
 </ul>

@@ -8,6 +8,9 @@ collections:
   projects:
     title: Projects
     output: true
+  talks:
+    title: Talks
+    output: true
   uploads:
     title: Uploads
     output: true
@@ -17,10 +20,14 @@ defaults:
     type: posts
   values:
     layout: post
-    permalink: "/posts/:title/"
 - scope:
     path: ''
     type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: talks
   values:
     layout: page
 - scope:
