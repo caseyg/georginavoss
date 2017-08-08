@@ -1,10 +1,8 @@
 ---
 title: As Above Not Below
 date: 2017-07-07 15:24:00 Z
-image: image-1.jpg
+image: "/uploads/image-1.jpg"
 ---
-
-{% img "image-1.jpg" "magick:resize:150x150^" "magick:crop:150x150+0+0" %}
 
 As Above Not Below was a commission for Artefact 2016, Up In The Air, at STUK, Leuven.
 

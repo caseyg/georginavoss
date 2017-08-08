@@ -8,10 +8,11 @@ layout: default
 
 <ul class="list-unstyled">
   {% for project in site.projects %}
+    {% assign image = project.image | remove: '/uploads/' | replace: '%20', ' ' %}
     <li class="list-unstyled-item py-2">
         <a href="{{ project.url }}">
           {{ project.title | escape }}<br>
-          {% img "{{ project.image }}" "magick:resize:250x250^" "magick:crop:250x250+0+0" %}<br>
+          {% img "{{ image }}" "magick:resize:250x250^" "magick:crop:250x250+0+0" %}<br>
           {{ project.date | date: "%B %Y" }}
         </a>
     </li>
