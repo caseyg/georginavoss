@@ -2,10 +2,13 @@
 title: Georgina Voss
 timezone: UTC
 collections:
+  posts:
+    title: Posts
+    output: true
   projects:
     title: Projects
     output: true
-  posts:
+  talks:
     title: Talks
     output: true
   uploads:
