@@ -1,7 +1,8 @@
 ---
 title: Unfamiliar Topologies
 date: 2017-11-20 00:00:00 Z
-embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/H9PMlCQ83qk?rel=0"
+embed: |
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/H9PMlCQ83qk?rel=0"
   frameborder="0" allowfullscreen></iframe>
 ---
 
