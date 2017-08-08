@@ -2,28 +2,18 @@
 layout: default
 ---
 
-<article class="post">
+<div class="content">
+  {{ content }}
+</div>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-  <ul>
-    {% for writing in page.writings %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ writing.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ writing.url | relative_url }}">{{ writing.title | escape }}</a>
-        </h2>
-        {% if writing.image != "" %}
-          {% img "{{ writing.image }}" "magick:resize:150x150^" "magick:crop:150x150+0+0" %}
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-</article>
+<ul class="list-unstyled">
+  {% for project in site.projects %}
+    <li class="list-unstyled-item py-2">
+        <a href="{{ project.url }}">
+          {{ project.title | escape }}<br>
+          {% img "{{ project.image }}" "magick:resize:250x250^" "magick:crop:250x250+0+0" %}<br>
+          {{ project.date | date: "%B %Y" }}
+        </a>
+    </li>
+  {% endfor %}
+</ul>

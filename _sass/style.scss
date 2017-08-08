@@ -26,15 +26,16 @@ main {
   text-align: left;
 }
 
-.active {
-//  font-weight: bold;
-  border-bottom: 3px solid gray;
-}
-
 .list-inline {
   a:hover {
     text-decoration: none;
   }
+	li {
+		border-bottom: 3px solid transparent;
+	}
+	li.active {
+	  border-bottom: 3px solid gray;
+	}
   li:hover {
     border-bottom: 3px solid darkgray;
   }
