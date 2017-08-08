@@ -2,11 +2,11 @@
 title: Georgina Voss
 timezone: UTC
 collections:
-  posts:
-    title: Talks
-    output: true
   projects:
     title: Projects
+    output: true
+  posts:
+    title: Talks
     output: true
   uploads:
     title: Uploads
@@ -35,10 +35,10 @@ description: 'I''m a technology anthropologist, artist, and writer. I''m based i
   systems.
 
 '
-baseurl:
+baseurl: 
 url: https://georginavoss.netlify.com
 twitter_username: gsvoss
-github_username:
+github_username: 
 markdown: kramdown
 plugins:
 - jekyll-feed
