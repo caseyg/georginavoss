@@ -14,9 +14,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-  writing:
-    title: Writing
-    output: false
 defaults:
 - scope:
     path: ''
