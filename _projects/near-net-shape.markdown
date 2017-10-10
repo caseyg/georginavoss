@@ -1,6 +1,7 @@
 ---
 title: Near Net Shape
 date: 2017-10-10 14:58:00 Z
+image: "/uploads/nearnetshape-1.jpeg"
 ---
 
 A steel sculpture and video essay, commissioned for the Future Flux Festival in association with artistic residency at RAMLAB, Port of Rotterdam.
