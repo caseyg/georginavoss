@@ -13,7 +13,7 @@ layout: default
         <a href="{{ project.url }}">
           {% img "{{ image }}" "magick:resize:250x250^" "magick:crop:250x250+0+0" %}<br>
           {{ project.title | escape }}<br>
-          <em>{{ project.date | date: "%B %Y" }}</em>
+          <span style="color: darkgray;">{{ project.date | date: "%B %Y" }}</span>
         </a>
     </li>
   {% endfor %}
