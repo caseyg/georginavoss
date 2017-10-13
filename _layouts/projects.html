@@ -6,15 +6,15 @@ layout: default
   {{ content }}
 </div>
 
-<div class="list-inline row">
+<ul class="list-inline">
   {% for project in site.projects %}
     {% assign image = project.image | remove: '/uploads/' | replace: '%20', ' ' %}
-    <div class="col-6 col-sm-4">
+    <li class="list-inline-item py-2">
         <a href="{{ project.url }}">
-          {% img "{{ image }}" "magick:resize:480x480^" "magick:crop:480x480+0+0" %}<br>
-          {{ project.title | escape }}<br>
-          <span style="color: darkgray;">{{ project.date | date: "%B %Y" }}</span>
+          {% img "{{ image }}" "magick:resize:250x250^" "magick:crop:250x250+0+0" %}<br>
+          {{ project.title | escape }}
+          {{ project.date | date: "%B %Y" }}
         </a>
-    </div>
+    </li>
   {% endfor %}
 </ul>

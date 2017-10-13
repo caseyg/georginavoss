@@ -1,3 +1,10 @@
+.ui-tooltip {
+	background:transparent;
+	border:none;
+	box-shadow: none;
+  opacity: 1;
+}
+
 #instantclick-bar {
   background: black;
 }
@@ -6,25 +13,47 @@ a:link, a:visited {
   color: black;
 }
 
-a.active {
-	text-decoration: underline !important;
-}
-
 footer a:link, footer a:visited {
   color: black;
 }
 
 body {
   font-family: Inconsolata;
+  text-align: center;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
+main {
+  text-align: left;
 }
 
-.smiley {
-	display: block;
-	font-size: 72px;
-	text-align: center;
+.writing {
+	li {
+		display: block;
+		max-width: 200px;
+		padding: 15px;
+		border: 1px solid lightgray;
+		margin: 15px;
+		float: left;
+		line-height: 1.15;
+	}
+}
+
+.list-inline {
+	li {
+		vertical-align: middle;
+	}
+	/*
+  a:hover {
+    text-decoration: none;
+  }
+	li {
+		border-bottom: 3px solid transparent;
+	}
+	li.active {
+	  border-bottom: 3px solid black;
+	}
+  li:hover {
+    border-bottom: 3px solid darkgray;
+  }
+	*/
 }

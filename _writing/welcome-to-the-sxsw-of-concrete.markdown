@@ -1,7 +1,6 @@
 ---
 title: Welcome to the SXSW of Concrete
 date: 2017-05-01 00:00:00 Z
-date-display: May 2017
 tags:
 - Infrastructure and Logistics
 publisher: The Atlantic

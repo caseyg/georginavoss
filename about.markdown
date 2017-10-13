@@ -2,7 +2,6 @@
 title: About
 date: 2017-10-12 20:04:00 Z
 position: 4
-layout: default
 ---
 
 I'm a technology anthropologist, artist, and writer. I'm based in London.

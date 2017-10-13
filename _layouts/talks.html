@@ -2,10 +2,16 @@
 layout: default
 ---
 
+<div class="content">
+  {{ content }}
+</div>
+
+<span>Key: ✻ video; ✧ audio</span>
+<hr>
+
 <dl class="list-unstyled">
-  {% assign sorted = site.talks | reverse %}
-  {% for talk in sorted %}
-    <dt class="mt-2">
+  {% for talk in site.talks %}
+    <dt>
       <a data-toggle="collapse" href="#{{ talk.slug | escaped }}" aria-expanded="false" aria-controls="{{ talk.slug | escaped }}">{{ talk.title }}</a>
       <span class="ml-2" style="color: darkgray;">
         {{ talk.date | date: "%B %Y" }}
@@ -15,5 +21,6 @@ layout: default
     <dd class="collapse" id="{{ talk.slug | escaped }}">
       {{ talk.content }}
     </dd>
+    <hr>
   {% endfor %}
 </dl>
