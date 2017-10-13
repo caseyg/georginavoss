@@ -38,6 +38,15 @@ defaults:
     type: projects
   values:
     layout: page
+    image: "IMAGE"
+- scope:
+    path: ''
+    type: writing
+  values:
+    layout: page
+    publisher: "PUBLISHER"
+    link: "LINK"
+    
 email: georgina@strangetelemetry.com
 description: 'I''m a technology anthropologist, artist, and writer. I''m based in
   London. My work focuses on the politics and culture surrounding the development
