@@ -4,8 +4,10 @@ layout: default
 
 <p><strong>{{ page.title }}</strong> &bull; {{ page.date | date: "%B %Y" }}</p>
 {% if page.image %}
-	{% assign image = page.image | remove: '/uploads/' | replace: '%20', ' ' %}
-	{% img "{{ image }}" "magick:resize:1500x600^" "magick:crop:1500x600+0+0" %}
+	{% if page.image != "IMAGE" %}
+		{% assign image = page.image | remove: '/uploads/' | replace: '%20', ' ' %}
+		{% img "{{ image }}" "magick:resize:1500x600^" "magick:crop:1500x600+0+0" %}
+	{% endif %}
 {% endif %}
 
 <article class="mt-3">

@@ -8,10 +8,17 @@ layout: default
 
 <div class="list-inline row">
   {% for project in site.projects %}
-    {% assign image = project.image | remove: '/uploads/' | replace: '%20', ' ' %}
-    <div class="col-6 col-sm-4">
+    <div class="col-6 col-sm-4 mb-3">
         <a href="{{ project.url }}">
-          {% img "{{ image }}" "magick:resize:480x480^" "magick:crop:480x480+0+0" %}<br>
+          {% if project.image %}
+            {% if project.image != "IMAGE" %}
+
+              {% assign image = project.image | remove: '/uploads/' | replace: '%20', ' ' %}
+              {% img "{{ image }}" "magick:resize:480x480^" "magick:crop:480x480+0+0" %}<br>
+              {% else %}
+              <img src="http://placehold.it/480x480"><br>
+            {% endif %}
+          {% endif %}
           {{ project.title | escape }}<br>
           <span style="color: darkgray;">{{ project.date | date: "%B %Y" }}</span>
         </a>
