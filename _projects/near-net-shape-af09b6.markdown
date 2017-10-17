@@ -1,8 +1,9 @@
 ---
 title: Near Net Shape
-date: 2017-10-10 14:58:00 Z
-image: "/uploads/nearnetshape-1.jpeg"
+date: 2017-10-17 14:40:00 Z
 ---
+
+2017
 
 A steel sculpture and video essay, commissioned for the Future Flux Festival in association with artistic residency at RAMLAB, Port of Rotterdam.
 
@@ -13,9 +14,3 @@ Software has been used to drive and control the operation of heavy machinery in 
 Working with the materials, aesthetics, and motions of the Port of Rotterdam, Near Net Shape brings to presence the software in maritime machines, materials, and hardware. The project consists of a heavy steel object ­– the dominant material of ports – constructed using experimental wire arch additive manufacturing techniques. When suspended at roughly the angle of a figurehead on a ship, the sculpture casts a shadow of the standard symbol for a Central Processing Unit, or CPU – the electronic circuitry that carries out the instructions of a computer program. Any physical machine whose functions are controlled by operating software will have some form of CPU inside it.
  
 Wire arc additive manufacturing is an experimental process which combines arc welding processes with complex software and hardware to create three-dimensional structures out of metal. Arc welding has been a commercially important part of the shipping industry since the 1940s, essential for fabricating steel structures and vehicles. Wire arc additive manufacturing depends on complex and interconnected digital and physical processes including the creation of 3D files, mapping toolpaths, and defining the speed and motions of robotic welding machinery.
-
-![nearnetshape-1.jpeg](/uploads/nearnetshape-1.jpeg)
-
-![nearnetshape-2.jpeg](/uploads/nearnetshape-2.jpeg)
-
-![nearnetshape-3.jpeg](/uploads/nearnetshape-3.jpeg)
