@@ -1,6 +1,7 @@
 ---
 title: Unfamiliar Topologies
 date: 2015-11-20 00:00:00 Z
+position: 0
 ---
 
 Open Data Institute, London. 20 November 2015. With Wesley Goatley. (Video)
