@@ -1,6 +1,6 @@
 ---
 title: Artist's Talk, Lighthouse Arts
-date: 2014-06-20 12:44:00 Z
+date: 2014-03-06 12:44:00 Z
 position: 4
 ---
 
