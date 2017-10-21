@@ -1,8 +1,9 @@
 ---
 title: Tethering the Hovercraft
 date: 2015-09-05 00:00:00 Z
+position: 2
 ---
 
-Talk given at dConstruct. This talk looks at how logistics systems and technological practices rub up against each other, and what happens when the unexpected - the illegal, the deviant, the military - gets in the way.
+dConstruct, Brighton. 5 September 2014. (Audio)
 
 [Audio](http://dconstruct.s3.amazonaws.com/2014/podcast/dconstruct2014-georgina-voss.mp3)
