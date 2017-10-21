@@ -4,5 +4,4 @@ title: 'Plural Future/s: Enacting Critical and Speculative Design at the Policy-
 date: 2016-09-08 13:39:00 Z
 ---
 
-
-* **[Plural Future/s: Enacting Critical and Speculative Design at the Policy-Publics Interface](http://www.sussex.ac.uk/spru/about/50years/conference/programme).** SPRU 50th Anniversary Conference, Brighton. 8 September 2016.
+[SPRU 50th Anniversary Conference](http://www.sussex.ac.uk/spru/about/50years/conference/programme), Brighton. 8 September 2016.
