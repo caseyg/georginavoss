@@ -1,6 +1,6 @@
 ---
 title: Esoteric Content
-date: 2017-09-20 00:00:00 Z
+date: 2017-09-05 00:00:00 Z
 position: 5
 ---
 
