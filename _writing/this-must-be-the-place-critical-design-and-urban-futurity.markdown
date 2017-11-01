@@ -5,3 +5,4 @@ publisher: Tomorrows Exhibition Catalogue, Onassis Cultural Centre
 link: http://tomorrows.sgt.gr/
 ---
 
+*Essay (with Tobias Revell)*
