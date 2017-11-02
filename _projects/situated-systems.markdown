@@ -26,9 +26,9 @@ Drawing and reflecting on the practices and affordances of digital fabrication a
 * Speculative Exhibition: An exhibition of the project, developed in consultation with the Pier 9 community, which was conceived and documented through speculative (rather than physical) approaches to allow us to have the greatest imaginative flexibility.
 
 
-* Situated Knowledges: A zine series collecting interviews with members of the Pier 9 community about their art practices and relationship to tools and machines; and with Rick and Megan Prelinger. Zines embody the promise not yet fulfilled by digital fabrication of low-cost replication.
+* [Situated Knowledges](http://situated.systems/knowledges/): A zine series collecting interviews with members of the Pier 9 community about their art practices and relationship to tools and machines; and with Rick and Megan Prelinger. Zines embody the promise not yet fulfilled by digital fabrication of low-cost replication.
 
 
-* Stickers: Stickers modelled after the Mission Support Equipment labels found on ex-military machinery from Mare Island Naval Shipyard.
+* [Stickers](http://situated.systems/swag/): Stickers modelled after the Mission Support Equipment labels found on ex-military machinery from Mare Island Naval Shipyard.
 
 Our [project website](http://situated.systems/) contains more detail about the collection, its documentation, and our approach. 
