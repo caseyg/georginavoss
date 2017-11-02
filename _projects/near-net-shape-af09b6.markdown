@@ -1,6 +1,7 @@
 ---
 title: Near Net Shape
 date: 2017-10-17 14:40:00 Z
+image: "/uploads/IMG_3874.jpg"
 ---
 
 **2017**

@@ -1,10 +1,12 @@
 ---
 title: As Above Not Below
 date: 2016-02-11 15:24:00 Z
-image: "/uploads/image-1.jpg"
+image: "/uploads/gv1-jb_stuk_artifact_2016_kvrancken_2736.jpg"
 ---
 
 **2016**
+
+![gv1-jb_stuk_artifact_2016_kvrancken_2736.jpg](/uploads/gv1-jb_stuk_artifact_2016_kvrancken_2736.jpg)
 
 A collaboration with Wesley Goatley, **As Above Not Below** was commissioned by [STUK, Leuven](http://www.stuk.be/en) for [Artefact 2016, Up In The Air](http://www.stuk.be/en/program/above-not-below-2016-artefact-commission).
 
