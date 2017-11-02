@@ -3,7 +3,7 @@ layout: default
 ---
 
 <dl class="list-unstyled">
-{% for writing in site.writing %}
+{% for writing in site.writing reversed %}
   {% assign currentdate = writing.date | date: "%Y" %}
   {% if currentdate != date %}
     <strong id="y{{currentdate}}" style="color: darkgray;">{{ currentdate }}</strong>
