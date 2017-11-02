@@ -12,4 +12,6 @@ image: "/uploads/IMG_0765.JPG"
 
 Wild Spirits is a wall piece comprised of material drawn from the trade publications XBIZ, Adult Video News, and AVNonline, and ephemera collected from trade shows. The piece traces the messy relationship between the pornography industry and emergent technologies through the industry’s own material, narratives, and in-jokes.
 
-![IMG_0766.JPG](/uploads/IMG_0766.JPG)
+![IMG_0770.JPG](/uploads/IMG_0770.JPG)
+
+![IMG_0363.JPG](/uploads/IMG_0363.JPG)
