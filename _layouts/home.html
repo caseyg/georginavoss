@@ -4,4 +4,9 @@ layout: default
 
 {{content}}
 
-<span class="smiley">☺</span>
+{% if page.image %}
+	{% if page.image != "IMAGE" %}
+		{% assign image = page.image | remove: '/uploads/' | replace: '%20', ' ' %}
+		{% img "{{ image }}" "magick:resize:1500x1500^" %}
+	{% endif %}
+{% endif %}
