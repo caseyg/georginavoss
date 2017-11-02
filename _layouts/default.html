@@ -18,9 +18,9 @@
 <body>
 
   <header class="container-fluid py-4">
-    <div class="row">
+    <div class="row nav">
       <div class="col">
-        <a href="/" {% if page.title == "Georgina Voss" %}class="active"{% endif %}>Georgina Voss</a>
+        <a href="/" class="georginavoss{% if page.title == "Georgina Voss" %} active{% endif %}">Georgina Voss</a>
       </div>
       <div class="col text-right">
         {% assign pages = site.pages | sort:"position" %}
