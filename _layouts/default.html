@@ -18,9 +18,9 @@
 <body>
 
   <header class="container-fluid py-4">
-    <div class="row">
+    <div class="row nav">
       <div class="col">
-        <a href="/" {% if page.title == "Georgina Voss" %}class="active"{% endif %}>Georgina Voss</a>
+        <span class="pagetitle"><a href="/" class="{% if page.title == "Georgina Voss" %} active{% endif %}">Georgina Voss</a>{% if page.title != "Georgina Voss" %}: <a href="{{ page.url | relative_url }}" class="active">{{ page.title | escape }}</a>{% endif %}</span>
       </div>
       <div class="col text-right">
         {% assign pages = site.pages | sort:"position" %}
@@ -28,9 +28,11 @@
           {% for my_page in pages %}
             {% if my_page.title %}
               {% if my_page.title != "Georgina Voss" %}
-                <li class="list-inline-item">
-                  <a href="{{ my_page.url | relative_url }}" {% if my_page.url == page.url %}class="active"{% endif %}>{{ my_page.title | escape }}</a>
-                </li>
+                {% if my_page.url != page.url %}
+                  <li class="list-inline-item">
+                    <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                  </li>
+                {% endif %}
               {% endif %}
             {% endif %}
           {% endfor %}

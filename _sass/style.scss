@@ -1,21 +1,23 @@
 #instantclick-bar {
-  background: black;
+	background: black;
 }
 
 a:link, a:visited {
   color: black;
+	text-decoration-skip: ink;
 }
 
 a.active {
-	text-decoration: underline !important;
+	text-decoration: underline;
+	font-weight: bold;
 }
 
 footer a:link, footer a:visited {
-  color: black;
+	color: black;
 }
 
 body {
-  font-family: Inconsolata;
+	font-family: Inconsolata;
 }
 
 img {
@@ -27,4 +29,13 @@ img {
 	display: block;
 	font-size: 72px;
 	text-align: center;
+}
+
+.pagetitle {
+	font-size: 1.25em;
+}
+
+.nav {
+	line-height: 1.5em;
+	font-size: 1.15em;
 }

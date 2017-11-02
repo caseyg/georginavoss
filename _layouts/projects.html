@@ -8,15 +8,15 @@ layout: default
 
 <div class="list-inline row">
   {% for project in site.projects %}
-    <div class="col-6 col-sm-4 mb-3">
+    <div class="col-6 col-sm-4 mb-3 pb-3">
         <a href="{{ project.url }}">
           {% if project.image %}
             {% if project.image != "IMAGE" %}
 
               {% assign image = project.image | remove: '/uploads/' | replace: '%20', ' ' %}
-              {% img "{{ image }}" "magick:resize:480x480^" "magick:crop:480x480+0+0" %}<br>
+              {% img "{{ image }}" "magick:resize:480x360^" "magick:crop:480x360+0+0" %}<br>
               {% else %}
-              <img src="http://placehold.it/480x480"><br>
+              <img src="http://placehold.it/480x360"><br>
             {% endif %}
           {% endif %}
           {{ project.title | escape }}<br>
