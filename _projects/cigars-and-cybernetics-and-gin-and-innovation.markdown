@@ -1,6 +1,6 @@
 ---
 title: Cigars & Cybernetics & Gin & Innovation
-date: 2017-10-17 14:42:00 Z
+date: 2017-08-01 14:42:00 Z
 image: "/uploads/Screen%20Shot%202017-11-02%20at%2015.05.07.png"
 ---
 
