@@ -1,21 +1,22 @@
 #instantclick-bar {
-  background: black;
+	background: black;
 }
 
 a:link, a:visited {
   color: black;
+	text-decoration-skip: ink;
 }
 
 a.active {
-	text-decoration: underline !important;
+	text-decoration: underline;
 }
 
 footer a:link, footer a:visited {
-  color: black;
+	color: black;
 }
 
 body {
-  font-family: Inconsolata;
+	font-family: Inconsolata;
 }
 
 img {
@@ -30,9 +31,11 @@ img {
 }
 
 .georginavoss {
-	font-size: 1.5em;
+	font-size: 1.25em;
+	font-weight: bold;
 }
 
 .nav {
 	line-height: 1.5em;
+	font-size: 1.15em;
 }
