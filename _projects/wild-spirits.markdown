@@ -1,7 +1,7 @@
 ---
 title: Wild Spirits
 date: 2017-09-15 14:38:00 Z
-image: "/uploads/IMG_0363.JPG"
+image: "/uploads/IMG_0737.JPG"
 ---
 
 **2017**
