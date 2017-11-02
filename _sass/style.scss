@@ -9,6 +9,7 @@ a:link, a:visited {
 
 a.active {
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 footer a:link, footer a:visited {
@@ -30,9 +31,8 @@ img {
 	text-align: center;
 }
 
-.georginavoss {
+.pagetitle {
 	font-size: 1.25em;
-	font-weight: bold;
 }
 
 .nav {
