@@ -1,7 +1,10 @@
 ---
 title: Ground Resistance
 date: 2017-10-17 14:48:00 Z
+image: "/uploads/WGGV_MK_UK7A6172_July2016.jpg"
 ---
+
+![WGGV_MK_UK7A6172_July2016.jpg](/uploads/WGGV_MK_UK7A6172_July2016.jpg)
 
 **2016**
 
