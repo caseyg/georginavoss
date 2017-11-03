@@ -1,6 +1,7 @@
 ---
 title: Situated Systems
 date: 2016-06-09 14:49:00 Z
+image: "/uploads/franklin.jpeg"
 ---
 
 **2016**
@@ -17,7 +18,7 @@ Drawing and reflecting on the practices and affordances of digital fabrication a
 * [Experimental Zine](http://situated.systems/experimental-zine/): This zine, created from laser-cut and etched plywood and stored in a welded steel box, examines the lingering consequences of land, water, and communities of decommissioned military sites. The materials and practices used to create the zine reflect those found in these sites, and in early shipbuilding.
 
 
-* Annotated Map: Documentation of the project’s fieldwork sites – military related, federal Superfund sites, and others.
+* [Annotated Map](http://situated.systems/sites/): Documentation of the project’s fieldwork sites – military related, federal Superfund sites, and others.
 
 
 * [Icons](http://situated.systems/icons/): Icons of Donna Haraway, Ursula Franklin, and Lucy Lippard, designed and fabricated as a learning exercise. The materiality of objects means that learning about fabrication cannot be done in the abstract – the only way to learn to make objects is to make objects.
