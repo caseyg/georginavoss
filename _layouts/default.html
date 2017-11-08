@@ -15,12 +15,12 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   </head>
-<body>
+<body id="{{page.title|slugify}}">
 
   <header class="container-fluid py-4">
     <div class="row nav">
       <div class="col">
-        <span class="pagetitle"><a href="/" class="{% if page.title == "Georgina Voss" %} active{% endif %}">Georgina Voss</a>{% if page.title != "Georgina Voss" %}: <a href="{{ page.url | relative_url }}" class="active">{{ page.title | escape }}</a>{% endif %}</span>
+        <span class="pagetitle"><a href="/" class="{% if page.title == "Georgina Voss" %} active{% endif %}">Georgina Voss</a>{% if page.title != "Georgina Voss" %}:<br> <strong>{{ page.title | escape }}</strong>{% endif %}</span>
       </div>
       <div class="col text-right">
         {% assign pages = site.pages | sort:"position" %}
@@ -28,11 +28,9 @@
           {% for my_page in pages %}
             {% if my_page.title %}
               {% if my_page.title != "Georgina Voss" %}
-                {% if my_page.url != page.url %}
-                  <li class="list-inline-item ml-1">
-                    <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-                  </li>
-                {% endif %}
+                <li class="list-inline-item ml-1">
+                  <a {% if page.title == my_page.title %} class="active"{% endif %} href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                </li>
               {% endif %}
             {% endif %}
           {% endfor %}
