@@ -1,7 +1,7 @@
 ---
 title: Writing
 date: 2017-07-07 23:11:00 Z
-position: 3
+position: 2
 writings:
 - title: Welcome to the SXSW of Concrete
   date: 2017-05-01 00:00:00 Z
