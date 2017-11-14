@@ -2,23 +2,21 @@
 layout: default
 ---
 
-<dl class="list-unstyled">
+<ul class="list-unstyled">
 {% for writing in site.writing reversed %}
-  {% assign currentdate = writing.date | date: "%Y" %}
-  {% if currentdate != date %}
-    <strong id="y{{currentdate}}" style="color: darkgray;">{{ currentdate }}</strong>
-    {% assign date = currentdate %}
-  {% endif %}
-    <dt class="mt-2">
-      <a data-toggle="collapse" href="#{{ writing.slug | escaped }}" aria-expanded="false" aria-controls="{{ writing.slug | escaped }}">{{ writing.title }}</a>
-      <span class="ml-2" style="color: darkgray;">
-        <em><a href="{{ writing.link }}">{{ writing.publisher }}</a></em> &bull; {{ writing.date-display }}
+  <li class="py-3 py-sm-2 row">
+    <small class="col-sm-2"><span style="color: darkgray;">{{ writing.date | date: "%d %b %Y" }}</span></small><br>
+    {% if writing.publisher == "PUBLISHER" %}
+      <span class="col-sm-10">
+        <a href="{{ writing.url }}" style="text-decoration: underline;"><strong>{{ writing.title }}</strong></a>
       </span>
-    </dt>
-    <dd class="collapse" id="{{ writing.slug | escaped }}">
-      <p>Tags: {{ writing.tags }}</p>
-      <p>Content:<br>
-        {{ writing.content }}</p>
-    </dd>
+    {% else %}
+      <span class="col-sm-10">
+        <strong>{{ writing.title }}</strong>
+        <a style="text-decoration: underline;" href="{{ writing.link }}"><small><em>&rarr; {{ writing.publisher }}</em></small></a><br>
+        {{ writing.content }}
+      </span>
+    {% endif %}
+  </li>
 {% endfor %}
-</dl>
+</ul>

@@ -2,18 +2,15 @@
 layout: default
 ---
 
-<dl class="list-unstyled">
+<ul class="list-unstyled">
   {% assign sorted = site.talks | reverse %}
   {% for talk in sorted %}
-    <dt class="mt-2">
-      <a data-toggle="collapse" href="#{{ talk.slug | escaped }}" aria-expanded="false" aria-controls="{{ talk.slug | escaped }}">{{ talk.title }}</a>
-      <span class="ml-2" style="color: darkgray;">
-        {{ talk.date | date: "%B %Y" }}
+    <li class="mt-2 row">
+      <small class="col-sm-2"><span style="color: darkgray;">{{ talk.date | date: "%d %b %Y" }}</span></small>
+      <span class="col-sm-10">
+      <strong>{{ talk.title }}</strong>
+        {{ talk.content }}
       </span>
-
-    </dt>
-    <dd class="collapse" id="{{ talk.slug | escaped }}">
-      {{ talk.content }}
-    </dd>
+    </li>
   {% endfor %}
-</dl>
+</ul>
