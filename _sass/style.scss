@@ -8,8 +8,8 @@ a:link, a:visited {
 }
 
 a.active {
-	text-decoration: underline;
-	font-weight: bold;
+	text-decoration: none;
+	font-style: italic;
 }
 
 footer a:link, footer a:visited {
@@ -17,7 +17,7 @@ footer a:link, footer a:visited {
 }
 
 body {
-	font-family: Overpass;
+	font-family: arial;
 }
 
 img {
@@ -35,7 +35,18 @@ img {
 	font-size: 1.25em;
 }
 
+.pagetitle .active {
+	text-decoration: none!important;
+}
+
 .nav {
 	line-height: 1.5em;
 	font-size: 1.15em;
+}
+
+#georgina-voss img {
+	max-height: 70vh;
+	width: auto;
+	display: block;
+	margin: 50px auto;
 }

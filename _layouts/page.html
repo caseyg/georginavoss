@@ -2,14 +2,19 @@
 layout: default
 ---
 
-<p><strong>{{ page.title }}</strong> &bull; {{ page.date | date: "%B %Y" }}</p>
+		</div>
+	</div>
+</main>
+<div class="container-fluid p-0">
 {% if page.image %}
 	{% if page.image != "IMAGE" %}
 		{% assign image = page.image | remove: '/uploads/' | replace: '%20', ' ' %}
 		{% img "{{ image }}" "magick:resize:1500x600^" "magick:crop:1500x600+0+0" %}
 	{% endif %}
 {% endif %}
-
-<article class="mt-3">
-  {{ content }}
-</article>
+</div>
+<div class="container">
+	<div class="row">
+		<article class="mt-3 col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+		  {{ content }}
+		</article>
