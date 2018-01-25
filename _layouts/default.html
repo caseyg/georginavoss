@@ -40,7 +40,7 @@
   <main class="container">
     <div class="row">
       <div class="col my-3 text-sm-center col-sm-8 offset-sm-2">
-          {% if page.title != "Georgina Voss" %}
+          {% if page.title != "Georgina Voss" and page.title != "About" %}
             <h1>{{ page.title | escape }}</h1>
             {% if page.title == "Writing" or page.title == "Talks" %}<p class="lead">{{ page.subtitle }}</p>{% endif %}
           {% endif %}
