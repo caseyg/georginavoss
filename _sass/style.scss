@@ -5,6 +5,11 @@
 a:link, a:visited {
   color: black;
 	text-decoration-skip: ink;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
 }
 
 a.active {
@@ -17,8 +22,8 @@ footer a:link, footer a:visited {
 }
 
 body {
-	font-family: default;
-	font-weight: 100;
+	font-family: "ff-dagny-web-pro";
+	font-weight: 300;
 }
 
 img {
@@ -37,6 +42,22 @@ h1 {
 .nav {
 	line-height: 1.5em;
 	font-size: 1.15em;
+	a:link, a:visited {
+		text-decoration: none;
+	}
+	a:hover, a:active {
+		font-style: italic;
+		text-decoration: none!important;
+	}
+}
+
+#projects {
+	a:link, a:visited {
+		text-decoration: none;
+	}
+	a:hover, a:active {
+		text-decoration: underline;
+	}
 }
 
 #georgina-voss img {

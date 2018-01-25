@@ -5,15 +5,16 @@ layout: default
 <ul class="list-unstyled">
 {% for writing in site.writing reversed %}
   <li class="py-3 py-sm-2 row">
-    <small class="col-sm-2"><span style="color: darkgray;">{{ writing.date | date: "%d %b %Y" }}</span></small><br>
     {% if writing.publisher == "PUBLISHER" %}
-      <span class="col-sm-10">
+      <span class="col-sm-12">
         <a href="{{ writing.url }}" style="text-decoration: underline;"><strong>{{ writing.title }}</strong></a>
+        <span style="color: darkgray;"> / {{ writing.date | date: "%d %b %Y" }}</span>
       </span>
     {% else %}
-      <span class="col-sm-10">
+      <span class="col-sm-12">
         <strong>{{ writing.title }}</strong>
-        <a style="text-decoration: underline;" href="{{ writing.link }}"><small><em>&rarr; {{ writing.publisher }}</em></small></a><br>
+        <a style="text-decoration: underline;" href="{{ writing.link }}"><em>&rarr; {{ writing.publisher }}</em></a>
+        <span style="color: darkgray;"> / {{ writing.date | date: "%d %b %Y" }}</span>
         {{ writing.content }}
       </span>
     {% endif %}

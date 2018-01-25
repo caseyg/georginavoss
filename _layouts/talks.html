@@ -6,8 +6,7 @@ layout: default
   {% assign sorted = site.talks | reverse %}
   {% for talk in sorted %}
     <li class="mt-2 row">
-      <small class="col-sm-2"><span style="color: darkgray;">{{ talk.date | date: "%d %b %Y" }}</span></small>
-      <span class="col-sm-10">
+      <span class="col-sm-12">
       <strong>{{ talk.title }}</strong>
         {{ talk.content }}
       </span>
