@@ -13,7 +13,7 @@ layout: default
     {% else %}
       <span class="col-sm-12">
         <a style="text-decoration: underline;" href="{{ writing.link }}"><strong>{{ writing.title }}</strong></a>
-        <em>{{ writing.publisher }}</em>
+        / <em>{{ writing.publisher }}</em>
         <span style="color: darkgray;"> / {{ writing.date | date: "%d %b %Y" }}</span>
         {{ writing.content }}
       </span>
