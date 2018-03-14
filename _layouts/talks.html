@@ -2,14 +2,12 @@
 layout: default
 ---
 
-<ul class="list-unstyled">
+<ul class="list-unstyled list--talks">
   {% assign sorted = site.talks | reverse %}
   {% for talk in sorted %}
     <li class="mt-2 row">
       <span class="col-sm-12">
-      <strong>{{ talk.title }}</strong>
-        {{ talk.content }}
-      </span>
+      <strong>{{ talk.title }}</strong> / {{ talk.content }}</span>
     </li>
   {% endfor %}
 </ul>
