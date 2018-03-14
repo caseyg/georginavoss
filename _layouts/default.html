@@ -6,6 +6,7 @@
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/leb5nmc.css">
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
@@ -15,11 +16,9 @@
   <header class="container py-4">
     <div class="row nav">
       <div class="col-sm-5">
-        <span class="pagetitle">
-          <a href="/" class="{% if page.title == "Georgina Voss" %} active{% endif %}">
-            <h2>Georgina Voss</h2>
-          </a>
-        </span>
+        <a href="/">
+          <strong>Georgina Voss</strong>
+        </a>
       </div>
       <div class="col-sm-7 text-sm-right">
         {% assign pages = site.pages | sort:"position" %}
@@ -40,10 +39,10 @@
 
   <main class="container">
     <div class="row">
-      <div class="col my-3 {% if page.collection == "projects" or page.title == "About" %}text-sm-center col-sm-8 offset-sm-2{% endif %} {% if page.title == "Writing" or page.title == "Talks" %}col-sm-10 offset-sm-2{% endif %}">
-          {% if page.title != "Georgina Voss" %} 
+      <div class="col my-3 text-sm-center col-sm-8 offset-sm-2">
+          {% if page.title != "Georgina Voss" and page.title != "About" %}
             <h1>{{ page.title | escape }}</h1>
-            {% if page.collection == "projects" %}<p class="lead">{{ page.date | date: "%B %Y" }}</p>{% endif %}
+            {% if page.title == "Writing" or page.title == "Talks" %}<p class="lead">{{ page.subtitle }}</p>{% endif %}
           {% endif %}
       </div>
     </div>

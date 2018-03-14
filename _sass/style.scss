@@ -5,6 +5,11 @@
 a:link, a:visited {
   color: black;
 	text-decoration-skip: ink;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
 }
 
 a.active {
@@ -17,7 +22,9 @@ footer a:link, footer a:visited {
 }
 
 body {
-	font-family: arial;
+	font-family: "ff-dagny-web-pro";
+	font-weight: 300;
+	font-size: 1.15em;
 }
 
 img {
@@ -25,14 +32,8 @@ img {
 	height: auto;
 }
 
-.smiley {
-	display: block;
-	font-size: 72px;
-	text-align: center;
-}
-
-.pagetitle {
-	font-size: 1.25em;
+h1 {
+	font-size: 1em;
 }
 
 .pagetitle .active {
@@ -41,7 +42,23 @@ img {
 
 .nav {
 	line-height: 1.5em;
-	font-size: 1.15em;
+	font-size: 1em;
+	a:link, a:visited {
+		text-decoration: none;
+	}
+	a:hover, a:active {
+		font-style: italic;
+		text-decoration: none!important;
+	}
+}
+
+#projects {
+	a:link, a:visited {
+		text-decoration: none;
+	}
+	a:hover, a:active {
+		text-decoration: underline;
+	}
 }
 
 #georgina-voss img {
@@ -49,4 +66,10 @@ img {
 	width: auto;
 	display: block;
 	margin: 50px auto;
+}
+
+.list--talks {
+	p {
+		display: inline;
+  }
 }
